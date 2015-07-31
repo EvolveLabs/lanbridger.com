@@ -1,5 +1,5 @@
 #content{
-
+  padding-bottom: 40px;
 }
 
 .info{
@@ -13,12 +13,37 @@
     border-bottom: solid 1px #eee;
     padding: 0.35em;
 
+  }
+
+}
+
+.download-wrapper{
+
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  margin: 20px 0;
+
+  h3{
+    margin: 0;
+    padding: 20px;
+  }
+
+  a{
+
+    display: block;
+    background: $green;
+    color: $white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+
     i{
-      position: relative;
-      top: 2px;
-      margin-right: 12px;
-      color: #22b573;
-      font-size: 1.25em;
+      margin-left: 6px;
+    }
+
+    &:hover{
+      background: darken($green, 8%);
     }
 
   }

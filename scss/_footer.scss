@@ -1,3 +1,26 @@
 footer{
 
+  padding: 40px 0;
+  background: $gray;
+
+  p{
+    margin: 0;
+    vertical-align:middle
+  }
+
+  .align-right a{
+    font-size: 1.75em;
+    margin-left: 6px;
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 600px){
+
+  footer .align-left{
+    position: relative;
+    top: 8px;
+  }
+
 }

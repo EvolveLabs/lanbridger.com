@@ -11,10 +11,22 @@ html{
   color: $black;
 }
 
+a{
+  color: $green;
+}
+
 .wrap{
+
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
+
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -30,5 +42,31 @@ h2{
   margin: 0;
 }
 h3{
+
+  i{
+      position: relative;
+      top: 0;
+      margin-right: 12px;
+      color: #22b573;
+      font-size: 1.25em;
+    }
+
+}
+
+.align-left{
+
+}
+.align-right{
+
+}
+
+@media only screen and (min-width: 600px){
+
+  .align-left{
+    float: left;
+  }
+  .align-right{
+    float: right;
+  }
 
 }

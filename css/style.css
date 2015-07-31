@@ -377,10 +377,17 @@ html {
   font-weight: 400;
   color: #1a1a1a; }
 
+a {
+  color: #22b573; }
+
 .wrap {
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto; }
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
@@ -390,6 +397,19 @@ h2 {
   font-size: 2.25em;
   padding: 1.5em 0;
   margin: 0; }
+
+h3 i {
+  position: relative;
+  top: 0;
+  margin-right: 12px;
+  color: #22b573;
+  font-size: 1.25em; }
+
+@media only screen and (min-width: 600px) {
+  .align-left {
+    float: left; }
+  .align-right {
+    float: right; } }
 
 header {
   background: #22b573;
@@ -425,16 +445,49 @@ header {
   #logo span.secondary {
     font-size: 1.4em; } }
 
+#content {
+  padding-bottom: 40px; }
+
 .info h3 {
   border-bottom: solid 1px #eee;
   padding: 0.35em; }
-  .info h3 i {
-    position: relative;
-    top: 2px;
-    margin-right: 12px;
-    color: #22b573;
-    font-size: 1.25em; }
+
+.download-wrapper {
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  margin: 20px 0; }
+  .download-wrapper h3 {
+    margin: 0;
+    padding: 20px; }
+  .download-wrapper a {
+    display: block;
+    background: #22b573;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center; }
+    .download-wrapper a i {
+      margin-left: 6px; }
+    .download-wrapper a:hover {
+      background: #1c935d; }
 
 @media only screen and (min-width: 600px) {
   .info .col-6 {
     height: 220px; } }
+
+footer {
+  padding: 40px 0;
+  background: #f8f8f8; }
+  footer p {
+    margin: 0;
+    vertical-align: middle; }
+  footer .align-right a {
+    font-size: 1.75em;
+    margin-left: 6px;
+    display: inline-block; }
+
+@media only screen and (min-width: 600px) {
+  footer .align-left {
+    position: relative;
+    top: 8px; } }
