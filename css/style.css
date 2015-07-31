@@ -1,1 +1,85 @@
 @import url(../node_modules/normalize.css/normalize.css);
+.row:after {
+  display: table;
+  content: "";
+  clear: both; }
+
+.col-6 {
+  float: left;
+  width: 100%;
+  padding: 0 20px; }
+
+@media only screen and (min-width: 600px) {
+  .col-6 {
+    width: 50%; } }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1a1a1a; }
+
+.wrap {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
+
+h2 {
+  text-align: center;
+  font-size: 2.25em;
+  padding: 1.5em 0;
+  margin: 0; }
+
+header {
+  background: #22b573;
+  color: #ffffff;
+  padding: 80px 0; }
+  header :last-child {
+    margin-bottom: 0; }
+  header p {
+    font-size: 1.2em; }
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  text-decoration: none; }
+  #logo span {
+    display: block;
+    text-align: center; }
+    #logo span.main {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2em;
+      text-transform: uppercase; }
+  #logo img {
+    display: block;
+    width: 212px;
+    height: 55px; }
+
+@media only screen and (min-width: 600px) {
+  #logo {
+    width: 340px; }
+  #logo span.main {
+    font-size: 3em; }
+  #logo span.secondary {
+    font-size: 1.6em; } }
+
+.info .col-6 {
+  height: 220px; }
+
+.info h3 {
+  border-bottom: solid 1px #eee;
+  padding: 0.35em; }
+  .info h3 i {
+    position: relative;
+    top: 6px;
+    margin-right: 6px;
+    color: #22b573; }
