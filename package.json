@@ -1,0 +1,25 @@
+{
+  "name": "www.lanbridger.com",
+  "version": "2.0.0",
+  "description": "The new website for lanbridger.com",
+  "main": "index.html css/style.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvolveLabs/lanbridger.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvolveLabs/lanbridger.com/issues"
+  },
+  "homepage": "https://github.com/EvolveLabs/lanbridger.com#readme",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "normalize.css": "^3.0.3"
+  }
+}
